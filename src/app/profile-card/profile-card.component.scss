@@ -1,0 +1,49 @@
+///  Written By: Abby Leon
+
+.profile-card {
+  margin: 16px;
+  box-shadow: 4px 4px 10px rgb(88, 88, 88);
+  background-image: linear-gradient(to bottom, #3AAFA9, #FEFFFF);
+  border: 1em;
+  border-radius: 1em;
+  padding: 1.5vw;
+  margin: 1vw;
+}
+
+.header {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-image {
+  // background-image: url('abby_profile.JPG');
+  background-size: cover;
+  width: 8vw;
+  height: 8vw;
+}
+
+.content {
+    margin: 1em;
+}
+
+.buttonCards {
+  color: white;
+  background-color: #2B7A78;
+  text-align: center;
+  margin: auto;
+  // margin-top: 2em;
+  // margin-bottom: 2em;
+  // border: 1em;
+  // border-radius: 1em;
+  // font-size: 1vw;
+  height: min-content;
+  width: fit-content;
+}
+
+img{
+  width: 100%;
+  border-radius: 50px;
+  align-content: flex-start;
+}
