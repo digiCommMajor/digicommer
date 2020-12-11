@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Importing Angular Material Designs
 import { MatSlider, MatSliderModule } from '@angular/material/slider';
-import { MatCardModule } from '@angular/material/card';
+import { MatCardModule, MatCard } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatRippleModule } from '@angular/material/core';
@@ -23,6 +23,8 @@ import { LindsayProfileComponent } from './lindsay-profile/lindsay-profile.compo
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SurveyPageComponent } from './survey-page/survey-page.component';
+import { SurveyCardComponent } from './survey-card/survey-card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { FooterComponent } from './footer/footer.component';
     LindsayProfileComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SurveyPageComponent,
+    SurveyCardComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,7 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule,
     MatToolbarModule,
     MatRippleModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
