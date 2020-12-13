@@ -10,10 +10,16 @@
 
 .text {
   color: teal;
+  font-weight: bold;
 }
 
 .slider {
   width: 100%;
   background-color: white;
   border-radius: 1.5em;
+}
+
+.questionNum{
+  font-family: monospace;
+  font-weight: bold;
 }
