@@ -22,6 +22,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SurveyPageComponent } from './survey-page/survey-page.component';
 import { SurveyCardComponent } from './survey-card/survey-card.component';
+import { ResultAComponent } from './result-a/result-a.component';
+import { ResultBComponent } from './result-b/result-b.component';
+import { ResultCComponent } from './result-c/result-c.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +38,10 @@ import { SurveyCardComponent } from './survey-card/survey-card.component';
     HeaderComponent,
     FooterComponent,
     SurveyPageComponent,
-    SurveyCardComponent
+    SurveyCardComponent,
+    ResultAComponent,
+    ResultBComponent,
+    ResultCComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,8 @@ import { SurveyCardComponent } from './survey-card/survey-card.component';
     MatButtonModule,
     MatToolbarModule,
     MatRippleModule,
-    MatIconModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
