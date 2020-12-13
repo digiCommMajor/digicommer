@@ -9,6 +9,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SurveyCardComponent } from './survey-card/survey-card.component';
 import { SurveyPageComponent } from './survey-page/survey-page.component';
+import { ResultAComponent } from './result-a/result-a.component';
+import { ResultBComponent } from './result-b/result-b.component';
+import { ResultCComponent } from './result-c/result-c.component';
 
 const routes: Routes = [
   // ---------PATHS-- Written By:Abby Leon -----------------
@@ -20,7 +23,10 @@ const routes: Routes = [
   { path: 'carly-profile', component: CarlyProfileComponent },
   { path: 'lindsay-profile', component: LindsayProfileComponent },
   { path: 'survey-page', component: SurveyPageComponent },
-  { path: 'survey-card', component: SurveyCardComponent }
+  { path: 'survey-card', component: SurveyCardComponent },
+  { path: 'result-a', component: ResultAComponent },
+  { path: 'result-b', component: ResultBComponent },
+  { path: 'result-c', component: ResultCComponent }
 
 ];
 
