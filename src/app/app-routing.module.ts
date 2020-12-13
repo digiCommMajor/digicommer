@@ -19,11 +19,9 @@ const routes: Routes = [
   { path: 'abby-profile', component: AbbyProfileComponent },
   { path: 'carly-profile', component: CarlyProfileComponent },
   { path: 'lindsay-profile', component: LindsayProfileComponent },
-// <<<<<<< survey-page
-  { path: 'survey-page', component: SurveyPageComponent }
+  { path: 'survey-page', component: SurveyPageComponent },
+  { path: 'survey-card', component: SurveyCardComponent }
 
-// =======
-// >>>>>>> master
 ];
 
 @NgModule({

@@ -13,9 +13,6 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule, MatIcon } from '@angular/material/icon';
 
-// import { ProfilecardComponent } from './profilecard/profilecard.component';
-// import { HeaderComponent } from './header/header.component';
-// import { CarlyComponent } from './carly/carly.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { CarlyProfileComponent } from './carly-profile/carly-profile.component';
 import { AbbyProfileComponent } from './abby-profile/abby-profile.component';
@@ -29,9 +26,6 @@ import { SurveyCardComponent } from './survey-card/survey-card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    // ProfilecardComponent,
-    // HeaderComponent,
-    // CarlyComponent,
     ProfileCardComponent,
     CarlyProfileComponent,
     AbbyProfileComponent,
