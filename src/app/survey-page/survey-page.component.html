@@ -1,15 +1,20 @@
 <div class="wrapper">
-  <app-survey-card question="How much do you enjoy making videos?" (result)="gotResult($event, 0)" minValue="1"
+  <app-survey-card class="survey-card" title="Question 1" question="How much do you enjoy making videos?"
+    (result)="gotResult($event, 0)" minValue="1" maxValue="100">
+  </app-survey-card>
+
+  <app-survey-card class="survey-card" title="Question 2"
+    question="On a scale of 1 - 100 how creative do you consider yourself?" (result)="gotResult($event, 1)" minValue="1"
     maxValue="100">
   </app-survey-card>
 
-  <app-survey-card question="On a scale of 1 - 100 how creative do you consider yourself?"
-    (result)="gotResult($event, 1)" minValue="1" maxValue="100">
-  </app-survey-card>
+  <app-survey-card class="survey-card" title="Question 3"
+    question="How much do you like communicating/connecting with people?" (result)="gotResult($event, 2)" minValue="1"
+    maxValue="100"></app-survey-card>
 
-  <app-survey-card question="How much do you like communicating/connecting with people?" (result)="gotResult($event, 2)"
-    minValue="1" maxValue="100"></app-survey-card>
+  <app-survey-card class="survey-card" title="Question 4"
+    question="On a scale of 1 - 10 how often would you say you take pictures?" (result)="gotResult($event, 2)"
+    minValue="1" maxValue="10"></app-survey-card>
 
-  <app-survey-card question="On a scale of 1 - 10 how often would you say you take pictures?"
-    (result)="gotResult($event, 2)" minValue="1" maxValue="10"></app-survey-card>
+  <input class="subBtn" type="Submit" value="Submit">
 </div>

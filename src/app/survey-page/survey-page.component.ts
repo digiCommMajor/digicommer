@@ -10,6 +10,7 @@ export class SurveyPageComponent implements OnInit {
   @Input() minValue: number;
   @Input() maxValue: number;
   @Input() units?: string = '';
+  @Input() title: string = '';
 
   @Output() result = new EventEmitter<number>();
 

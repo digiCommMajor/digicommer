@@ -1,6 +1,16 @@
 .wrapper {
-  border: 1px solid black;
   display: grid;
   place-items: center;
+  margin: 2vw;
 }
 
+.subBtn{
+  color: white;
+  background-color: teal;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.survey-card{
+  padding: 2vw;
+}

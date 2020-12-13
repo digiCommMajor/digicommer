@@ -11,6 +11,7 @@ export class SurveyCardComponent implements OnInit {
   @Input() minValue: number;
   @Input() maxValue: number;
   @Input() units?: string = '';
+  @Input() title: string = '';
 
   @Output() result = new EventEmitter<number>();
 
