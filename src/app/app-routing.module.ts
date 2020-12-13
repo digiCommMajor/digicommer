@@ -7,6 +7,8 @@ import { AbbyProfileComponent } from './abby-profile/abby-profile.component';
 import { LindsayProfileComponent } from './lindsay-profile/lindsay-profile.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SurveyCardComponent } from './survey-card/survey-card.component';
+import { SurveyPageComponent } from './survey-page/survey-page.component';
 
 const routes: Routes = [
   // ---------PATHS-- Written By:Abby Leon -----------------
@@ -17,6 +19,11 @@ const routes: Routes = [
   { path: 'abby-profile', component: AbbyProfileComponent },
   { path: 'carly-profile', component: CarlyProfileComponent },
   { path: 'lindsay-profile', component: LindsayProfileComponent },
+// <<<<<<< survey-page
+  { path: 'survey-page', component: SurveyPageComponent }
+
+// =======
+// >>>>>>> master
 ];
 
 @NgModule({
