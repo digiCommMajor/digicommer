@@ -22,11 +22,31 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SurveyPageComponent } from './survey-page/survey-page.component';
 import { SurveyCardComponent } from './survey-card/survey-card.component';
+
 import { ResultAComponent } from './result-a/result-a.component';
 import { ResultBComponent } from './result-b/result-b.component';
 import { ResultCComponent } from './result-c/result-c.component';
+import { ChatAppComponent } from './chat-app/chat-app.component';
+
+// firestore imports
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+import { ColorPickerModule } from 'ngx-color-picker';
+import { FormsModule } from '@angular/forms';
 
 
+
+// Implementing Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyB-XO6AHi0oBiHpovlpam48QpH4vyh8cbQ",
+  authDomain: "digicommer-69795.firebaseapp.com",
+  projectId: "digicommer-69795",
+  storageBucket: "digicommer-69795.appspot.com",
+  messagingSenderId: "718403866001",
+  appId: "1:718403866001:web:1aa1da1f9a298608315e30",
+  measurementId: "G-3D9N1R955W"
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,8 +61,11 @@ import { ResultCComponent } from './result-c/result-c.component';
     SurveyCardComponent,
     ResultAComponent,
     ResultBComponent,
-    ResultCComponent
+    ResultCComponent,
+    ChatAppComponent,
   ],
+
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -52,7 +75,11 @@ import { ResultCComponent } from './result-c/result-c.component';
     MatButtonModule,
     MatToolbarModule,
     MatRippleModule,
-    MatIconModule
+    MatIconModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule,
+    FormsModule,
+    ColorPickerModule
 
   ],
   providers: [],

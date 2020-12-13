@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "digicommer-69795": {
+      "hosting": {
+        "digicommer": [
+          "digicommer-69795"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "digicommer-69795"
+  }
+}

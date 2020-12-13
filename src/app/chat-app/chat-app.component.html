@@ -1,0 +1,20 @@
+<div class="head"> 
+    <h1>
+    Let's Chat!
+    </h1>
+    <label>Please enter an ID name: </label>
+      <input type="text" [(ngModel)]="name" name="name" placeholder="Enter name here..."> &nbsp;
+    <label>Select a color for your messages: </label>
+    <input [(colorPicker)]="color" [style.background]="color" [(ngModel)]="color" name="color" placeholder="Please select a color..."/>
+</div>
+
+<br>
+
+<div>
+  <ul *ngFor="let input of inputs | async " [ngStyle] = "{'color': input.color}">
+    <li> {{input.timestamp.toDate() | date:'medium' }} {{input.name}}: {{input.message}}</li>
+  </ul>
+  <label for="messageBox">Enter your message: </label>
+  <input class="messageBox" type="text" [(ngModel)]="message" name="input" (keyup.enter)="add()" placeholder="Enter message here...">
+</div>
+
