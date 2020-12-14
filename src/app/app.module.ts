@@ -22,6 +22,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SurveyPageComponent } from './survey-page/survey-page.component';
 import { SurveyCardComponent } from './survey-card/survey-card.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { ResultAComponent } from './result-a/result-a.component';
 import { ResultBComponent } from './result-b/result-b.component';
@@ -41,7 +42,8 @@ import { ResultCComponent } from './result-c/result-c.component';
     SurveyCardComponent,
     ResultAComponent,
     ResultBComponent,
-    ResultCComponent
+    ResultCComponent,
+
   ],
 
 
@@ -54,7 +56,8 @@ import { ResultCComponent } from './result-c/result-c.component';
     MatButtonModule,
     MatToolbarModule,
     MatRippleModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule
 
   ],
   providers: [],

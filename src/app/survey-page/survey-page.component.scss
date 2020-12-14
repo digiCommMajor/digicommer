@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
-  place-items: center;
   margin: 2vw;
+  display: inline;
 }
 
 .subBtn{
@@ -9,6 +9,10 @@
   background-color: teal;
   font-size: large;
   border-radius: 5px;
+  display: grid;
+  margin-left: 45%;
+  margin-right: 45%;
+
 }
 
 .survey-card{
