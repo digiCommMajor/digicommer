@@ -1,39 +1,61 @@
 <div class="wrapper">
-  <app-survey-card class="survey-card" title="Question 1" question="How much do you enjoy making videos?"
-    (result)="gotResult($event, 0)" minValue="1" maxValue="10">
-  </app-survey-card>
+  <mat-grid-list cols="2" rowHeight="250px">
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 1" question="How much do you enjoy making videos?"
+        (result)="gotResult($event, 0)" minValue="1" maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 2"
+        question="How interested are you to konw how a film is made?" (result)="gotResult($event, 1)" minValue="1"
+        maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 3" question="How much do you value communction with people?"
+        (result)="gotResult($event, 2)" minValue="1" maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 4"
+        question="How often do you find yourslef using technology?" (result)="gotResult($event, 3)" minValue="1"
+        maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 5" question="How interested are you in coding?"
+        (result)="gotResult($event, 4)" minValue="1" maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 6"
+        question="How curious are you about user interface/ web design?" (result)="gotResult($event, 5)" minValue="1"
+        maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 7"
+        question="How creative are you? Do you you have a artistic eye?" (result)="gotResult($event, 6)" minValue="1"
+        maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 8" question="How easy is it for you to learn a new skill?"
+        (result)="gotResult($event, 7)" minValue="1" maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 9" question="How much do you enjoy telling stories?"
+        (result)="gotResult($event, 8)" minValue="1" maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-survey-card class="survey-card" title="Question 10" question="How often would you say you take pictures?"
+        (result)="gotResult($event, 9)" minValue="1" maxValue="10">
+      </app-survey-card>
+    </mat-grid-tile>
+  </mat-grid-list>
 
-  <app-survey-card class="survey-card" title="Question 2" question="How interested are you to konw how a film is made?"
-    (result)="gotResult($event, 1)" minValue="1" maxValue="10">
-  </app-survey-card>
-
-  <app-survey-card class="survey-card" title="Question 3" question="How much do you value communction with people?"
-    (result)="gotResult($event, 2)" minValue="1" maxValue="10"></app-survey-card>
-
-  <app-survey-card class="survey-card" title="Question 4" question="How often do you find yourslef using technology?"
-    (result)="gotResult($event, 3)" minValue="1" maxValue="10"></app-survey-card>
-
-  <!-- Added questions -->
-  <app-survey-card class="survey-card" title="Question 5" question="How interested are you in coding?"
-    (result)="gotResult($event, 4)" minValue="1" maxValue="10"></app-survey-card>
-
-  <app-survey-card class="survey-card" title="Question 6"
-    question="How curious are you about user interface/ web design?" (result)="gotResult($event, 5)" minValue="1"
-    maxValue="10"></app-survey-card>
-
-  <app-survey-card class="survey-card" title="Question 7"
-    question="How creative are you? Do you you have a artistic eye?" (result)="gotResult($event, 6)" minValue="1"
-    maxValue="10"></app-survey-card>
-
-  <app-survey-card class="survey-card" title="Question 8" question="How easy is it for you to learn a new skill?"
-    (result)="gotResult($event, 7)" minValue="1" maxValue="10"></app-survey-card>
-
-  <app-survey-card class="survey-card" title="Question 9" question="How much do you enjoy telling stories?"
-    (result)="gotResult($event, 8)" minValue="1" maxValue="10"></app-survey-card>
-
-  <app-survey-card class="survey-card" title="Question 10" question="How often would you say you take pictures?"
-    (result)="gotResult($event, 9)" minValue="1" maxValue="10"></app-survey-card>
-
-  <a mat-stroked-button class="surveyBtn" routerLink="/result-b">See Results</a>
+  <a mat-stroked-button class="subBtn" routerLink="/result-b">See Results</a>
 
 </div>
