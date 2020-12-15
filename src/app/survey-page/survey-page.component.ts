@@ -1,6 +1,15 @@
 import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { Router } from '@angular/router'; // import router from angular router
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+
+interface SurveyData { 
+  firstName: string;
+  lastName: string;
+  gradYear: string;
+  totalScore: number;  
+}
 
 @Component({
   selector: 'app-survey-page',
@@ -8,6 +17,7 @@ import { Router } from '@angular/router'; // import router from angular router
   styleUrls: ['./survey-page.component.scss']
 })
 export class SurveyPageComponent implements OnInit {
+
   @Input() question: string;
   @Input() minValue: number;
   @Input() maxValue: number;
@@ -57,7 +67,27 @@ export class SurveyPageComponent implements OnInit {
     }
   }
 
-  constructor(private route: Router) { }
+  // Firebase implementation
+  inputCol: AngularFirestoreCollection<SurveyData>;
+  inputs: Observable<SurveyData[]>;
+
+  firstName: string = "";
+  lastName: string = "";
+  gradYear: string = "";
+  totalScore: number;
+
+  constructor(private route: Router, private db: AngularFirestore) { 
+    this.inputCol = this.db.collection<SurveyData>("users");
+    this.inputs = this.inputCol.valueChanges();
+  }
+
+  add() {
+    this.db.collection('users').add({ 
+      "firstName": this.firstName,
+      "lastName": this.lastName,
+      "gradYear": this.gradYear,
+      "totalScore": this.totalScore })
+  }
 
   ngOnInit(): void {
   }

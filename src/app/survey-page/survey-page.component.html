@@ -59,4 +59,15 @@
 
   <a mat-stroked-button class="subBtn" (click)="onSubmit()">See Results</a>
 
+  <div class="firebase">
+    <h3>Can we save your results? If yes, please enter your information below. Otherwise, you may submit to receive your results.</h3>
+    <label for="firstName">First name:</label> <!-- label element -->
+        <input type="text" [(ngModel)]="firstName" (keyup.enter)="add()" id="firstName" name="firstName" required> <!-- input element, attribute type -->
+    <label for="lastName">Last name:</label> <!-- label element -->
+        <input type="text" [(ngModel)]="lastName" id="lastName" name="lastName" required> <!-- input element, attribute type -->
+    <label for="gradYear">Graduation Year:</label> <!-- label element -->
+        <input type="text" [(ngModel)]="gradYear" id="gradYear" name="gradYear" required> <!-- input element, attribute type -->
+    <h3>Total</h3>
+    <a mat-stroked-button class="saveBtn" (click)="add()">Yes</a>
+  </div>
 </div>

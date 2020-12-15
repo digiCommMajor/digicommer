@@ -32,6 +32,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 // Imports for Firebase
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 
 // Firebase Config
 const firebaseConfig = {
@@ -60,9 +61,7 @@ const firebaseConfig = {
     ResultBComponent,
     ResultCComponent,
     CarouselComponent,
-
   ],
-
 
   imports: [
     BrowserModule,
@@ -77,6 +76,7 @@ const firebaseConfig = {
     MatGridListModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
+    FormsModule,
 
   ],
   providers: [],
