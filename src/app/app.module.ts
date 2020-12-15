@@ -27,6 +27,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { ResultAComponent } from './result-a/result-a.component';
 import { ResultBComponent } from './result-b/result-b.component';
 import { ResultCComponent } from './result-c/result-c.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ResultCComponent } from './result-c/result-c.component';
     ResultAComponent,
     ResultBComponent,
     ResultCComponent,
+    CarouselComponent,
 
   ],
 

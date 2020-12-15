@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbbyProfileComponent implements OnInit {
 
+  public slides = [
+    { src:"/assets/img/abby1.jpg" },
+    { src:"/assets/img/abby2.jpg" }, 
+    { src:"/assets/img/abby3.jpg" }
+  ];
   constructor() { }
 
   ngOnInit(): void {

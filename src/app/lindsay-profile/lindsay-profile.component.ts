@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LindsayProfileComponent implements OnInit {
 
+  public slides = [
+    { src:"/assets/img/lindsay1.jpg" },
+    { src:"/assets/img/lindsay2.jpg" }, 
+    { src:"/assets/img/lindsay3.jpg" }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
