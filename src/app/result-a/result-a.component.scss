@@ -1,3 +1,4 @@
+// Styled By: Carly Brooks
 .layout {
     display: flex;
     flex-direction: row;
@@ -9,8 +10,23 @@
     margin: .5em;
 }
 
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
 .content {
     justify-content: right;
     padding: .5em;
     margin: .5em;
 }
+
+.surveyBtn{
+    color: white;
+    background-color: teal;
+    float: right;
+
+  }

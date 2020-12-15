@@ -1,19 +1,37 @@
+<!-- Written By: Carly Brooks -->
 <div class="layout">
-    <img class="img" src="assets/img/resultb.jpg">
+    <img class="img" src="assets/img/resultb-1.jpg">
     <div class="content">
-        <h1>We've sparked your curiosity!</h1>
-        <p>It looks like you've got some interest in digital communications! Whether it's your creativity or your
+        <h1>You got: We've Sparked Your Curiosity!</h1>
+        <p>It looks like you've got some interest in Digital Communications! Whether it's your creativity or your
             technology skills, you have the making of becoming a talented digi commer. Here are some good beginner digi comm 
-            classes we recommend to see if it's something you would want to pursue!
+            classes we recommend to see if it's something you would want to pursue! From computer science to photography, Digital
+            Communications offers a variety of amazing courses that will spark the creativity in you.
         </p>
-        <span class="buttons">
-            <a mat-stroked-button class="courses" href="https://cs.calvin.edu/courses/cs/100/kvlinden/">CS100</a>
-            <a mat-stroked-button class="courses" href="https://cs.calvin.edu/courses/cs/108/kvlinden/">CS108</a>
-            <a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=16&coid=31307">COMM145</a>
-            <a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=16&coid=31308">COMM180</a>
-            <a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=16&coid=31218">ART255</a>
-            <a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=17&coid=33310">ART256</a>
-        </span>
+        <table>
+            <tr>
+                <th>Department</th>
+                <th colspan="2">Course</th>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td class="button"><a mat-stroked-button class="courses" href="https://cs.calvin.edu/courses/cs/100/kvlinden/">CS100</a></td>
+                <td class="button"><a mat-stroked-button class="courses" href="https://cs.calvin.edu/courses/cs/108/kvlinden/">CS108</a></td>
+            </tr>
+            <tr>
+                <td>Film and Media</td>
+                <td class="button"><a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=16&coid=31307">COMM145</a></td>
+                <td class="button"><a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=16&coid=31308">COMM180</a></td>
+            </tr>
+            <tr>
+                <td>Art</td>
+                <td class="button"><a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=16&coid=31218">ART255</a></td>
+                <td class="button"><a mat-stroked-button class="courses" href="https://catalog.calvin.edu/preview_course_nopop.php?catoid=17&coid=33310">ART256</a></td>
+            </tr>
+        </table>
+        <!-- <button class="surveyBtn" mat-raised-button>Take Survey</button> -->
+        <a mat-stroked-button class="surveyBtn" routerLink="/survey-page">Retake Survey</a>
     </div>
+    <img class="img" src="assets/img/resultb-2.jpg">
 </div>
 
