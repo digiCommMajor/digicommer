@@ -6,9 +6,12 @@ import { ChildActivationStart } from '@angular/router';
   templateUrl: './profile-card.component.html',
   styleUrls: ['./profile-card.component.scss']
 })
+
+// interface Item { firstName: string, lastName: string; id: number }
+
 export class ProfileCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(){ }
 
   @Input() name: string;
   @Input() year: string;
