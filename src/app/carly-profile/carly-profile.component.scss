@@ -4,8 +4,14 @@
   background-image: linear-gradient(to bottom, #3AAFA9, #FEFFFF);
   border: 1em;
   border-radius: 1em;
-  padding: 1.5vw;
+  padding: 1vw;
   margin: 1vw;
+}
+
+p {
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
 }
 
 img {
@@ -21,7 +27,8 @@ img {
 }
 
 .content {
-  padding: .5em;
+  width: 50%;
+  padding: 1em;
   margin: .5em;
 }
 
@@ -35,6 +42,16 @@ img {
 
 }
 
+.button {
+  color: white;
+  background-color: teal;
+  font-size: large;
+  border-radius: 5px;
+  // display: grid;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
 .seeMore{
   text-align: center;
 }
@@ -45,4 +62,5 @@ img {
   height: 500px;
   width: 500px;
   padding: 2em;
+  width: 50%;
 }

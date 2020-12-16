@@ -12,6 +12,7 @@ export class CarlyProfileComponent implements OnInit {
   public slides = [
     { src:"/assets/img/carly3.jpg" },
     { src:"/assets/img/carly2.jpg" }, 
+    { src:"/assets/img/carly4.jpg" },
     { src:"/assets/img/carly5.jpg" }
   ];
 

@@ -8,6 +8,12 @@
   margin: 1vw;
 }
 
+p {
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
 img {
   max-width: 200px;
   padding: .5em;
@@ -21,6 +27,7 @@ img {
 }
 
 .content {
+  width: 50%;
   padding: .5em;
   margin: .5em;
 }
@@ -35,6 +42,16 @@ img {
 
 }
 
+.button {
+  color: white;
+  background-color: teal;
+  font-size: large;
+  border-radius: 5px;
+  // display: grid;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
 .seeMore{
   text-align: center;
 }
@@ -45,4 +62,5 @@ img {
   height: 500px;
   width: 500px;
   padding: 2em;
+  width: 50%;
 }
