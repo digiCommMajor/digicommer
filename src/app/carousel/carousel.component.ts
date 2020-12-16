@@ -1,4 +1,4 @@
-// Code for Carousel used from Bram Peirs
+// Carousel Code from used Bram Peirs -> StackBlitz: http://stackblitz.com/github/brampeirs/angular-carousel
 import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
