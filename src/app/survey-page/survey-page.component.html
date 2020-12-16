@@ -1,7 +1,7 @@
 <div class="wrapper">
   <mat-grid-list cols="2" rowHeight="250px">
     <mat-grid-tile>
-      <app-survey-card class="survey-card" title="Question 1" question="How much do you enjoy making videos?"
+      <app-survey-card class="survey-card" title="Question 1" question="How much do you enjoy filming or editing videos?"
         (result)="gotResult($event, 0)" minValue="1" maxValue="10">
       </app-survey-card>
     </mat-grid-tile>
@@ -41,33 +41,43 @@
       </app-survey-card>
     </mat-grid-tile>
     <mat-grid-tile>
-      <app-survey-card class="survey-card" title="Question 8" question="How easy is it for you to learn a new skill?"
+      <app-survey-card class="survey-card" title="Question 8" question="How comfortable are you learning a new skill outside of your field?"
         (result)="gotResult($event, 7)" minValue="1" maxValue="10">
       </app-survey-card>
     </mat-grid-tile>
     <mat-grid-tile>
-      <app-survey-card class="survey-card" title="Question 9" question="How much do you enjoy telling stories?"
+      <app-survey-card class="survey-card" title="Question 9" question="How much do you enjoy telling stories through the medium of film or photography?"
         (result)="gotResult($event, 8)" minValue="1" maxValue="10">
       </app-survey-card>
     </mat-grid-tile>
     <mat-grid-tile>
-      <app-survey-card class="survey-card" title="Question 10" question="How often would you say you take pictures?"
+      <app-survey-card class="survey-card" title="Question 10" question="How often do you find yourself taking pictures of things?"
         (result)="gotResult($event, 9)" minValue="1" maxValue="10">
       </app-survey-card>
     </mat-grid-tile>
   </mat-grid-list>
 
-  <a mat-stroked-button class="subBtn" (click)="onSubmit()">See Results</a>
-
+<hr>
   <div class="firebase">
     <h3>Can we save your results? If yes, please enter your information below. Otherwise, you may submit to receive your results.</h3>
-    <label for="firstName">First name:</label> <!-- label element -->
-        <input type="text" [(ngModel)]="firstName" (keyup.enter)="add()" id="firstName" name="firstName" required> <!-- input element, attribute type -->
-    <label for="lastName">Last name:</label> <!-- label element -->
-        <input type="text" [(ngModel)]="lastName" id="lastName" name="lastName" required> <!-- input element, attribute type -->
-    <label for="gradYear">Graduation Year:</label> <!-- label element -->
-        <input type="text" [(ngModel)]="gradYear" id="gradYear" name="gradYear" required> <!-- input element, attribute type -->
-    <h3>Total</h3>
-    <a mat-stroked-button class="saveBtn" (click)="add()">Yes</a>
-  </div>
+      <div class="user-info">
+        <label for="firstName">First name: </label> <!-- label element -->
+            <input type="text" [(ngModel)]="firstName" id="firstName" name="firstName"> &nbsp; <!-- input element, attribute type -->
+        <label for="lastName">Last name: </label> <!-- label element -->
+            <input type="text" [(ngModel)]="lastName" id="lastName" name="lastName"> &nbsp;<!-- input element, attribute type -->
+        <label for="gradYear">Graduation Year: </label> <!-- label element -->
+            <input type="text" [(ngModel)]="gradYear" id="gradYear" name="gradYear"> &nbsp;<!-- input element, attribute type -->
+        <br> &nbsp;
+          <button class="saveBtn" (click)="add()">Submit your info</button>
+        <br>
+      </div>
+  </div> 
+  <hr>
+  <br> 
+  <a mat-stroked-button class="subBtn" (click)="onSubmit()">See Results</a>
+  <!-- Test to see user inputs are being saved in the database (Uncomment to see list of survey takers) -->
+  <!-- <h3 class="firebase">Here is a list of people who have already taken this survey!</h3>
+  <ul *ngFor="let input of inputs | async ">
+    <li> {{input.firstName}} {{input.lastName}}, {{input.gradYear}}</li>
+  </ul> -->
 </div>

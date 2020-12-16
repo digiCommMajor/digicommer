@@ -4,7 +4,7 @@
   display: inline;
 }
 
-.subBtn{
+.subBtn, .saveBtn{
   color: white;
   background-color: teal;
   font-size: large;
@@ -18,4 +18,16 @@
 .survey-card{
   padding: 2vw;
   font-family: monospace;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+
+.firebase{
+  text-align: center;
+  border: 2px;
+  border-color: teal;
 }

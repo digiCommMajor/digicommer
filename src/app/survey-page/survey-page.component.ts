@@ -8,7 +8,7 @@ interface SurveyData {
   firstName: string;
   lastName: string;
   gradYear: string;
-  totalScore: number;  
+  totalScore: string;
 }
 
 @Component({
@@ -55,12 +55,15 @@ export class SurveyPageComponent implements OnInit {
      -- depending on what their total is they will be redirected to another page  */
   onSubmit = () => {
     console.log(this.total);
-    if (this.total <= 30) {
-      //  Digi Comm might not be for them so route to result-c
-      this.route.navigate(['/result-c']);
+    if (this.total === undefined || this.total < 1) {
+      // user must answer at least one survey question
+      alert("At least one question must be answered before submitting!");
     } else if (this.total >= 60) {
       //  Digi Comm might looks like a good fit for them so route to result-a
       this.route.navigate(['/result-a']);
+    } else if (this.total <= 30) {
+      //  Digi Comm might not be for them so route to result-c
+      this.route.navigate(['/result-c']);
     } else {
       //  Digi Comm is a possibility them so route to result-b
       this.route.navigate(['/result-b']);
@@ -74,7 +77,7 @@ export class SurveyPageComponent implements OnInit {
   firstName: string = "";
   lastName: string = "";
   gradYear: string = "";
-  totalScore: number;
+  totalScore: string = "";
 
   constructor(private route: Router, private db: AngularFirestore) { 
     this.inputCol = this.db.collection<SurveyData>("users");
@@ -85,8 +88,10 @@ export class SurveyPageComponent implements OnInit {
     this.db.collection('users').add({ 
       "firstName": this.firstName,
       "lastName": this.lastName,
-      "gradYear": this.gradYear,
-      "totalScore": this.totalScore })
+      "gradYear": this.gradYear, 
+      "totalScore": this.total })
+      alert("Your information has been submitted! Now you click to see your result.");
+      console.log(this.firstName, this.lastName, this.gradYear, this.total);
   }
 
   ngOnInit(): void {
